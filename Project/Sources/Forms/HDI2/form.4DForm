@@ -1,0 +1,1654 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 800,
+	"windowMaxWidth": 32000,
+	"windowMinHeight": 540,
+	"windowMaxHeight": 32000,
+	"width": 960,
+	"height": 720,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onCloseBox"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 20,
+					"left": 20,
+					"width": 920,
+					"height": 650,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "objTabs",
+					"dataSourceTypeHint": "object",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				},
+				"BtnOK": {
+					"type": "button",
+					"top": 680,
+					"left": 838,
+					"width": 102,
+					"height": 20,
+					"sizingX": "move",
+					"sizingY": "move",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"shortcutKey": "[Enter]",
+					"text": "OK",
+					"class": "Buttons_13",
+					"defaultButton": true,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/BtnOK.4dm"
+				},
+				"Line": {
+					"type": "line",
+					"top": 0,
+					"left": 480,
+					"height": 720,
+					"visibility": "hidden",
+					"sizingY": "grow",
+					"stroke": "#800080",
+					"strokeDashArray": "1 1"
+				}
+			}
+		},
+		{
+			"objects": {
+				"GreenShadow": {
+					"type": "rectangle",
+					"top": 138,
+					"left": 92,
+					"width": 770,
+					"height": 139,
+					"borderRadius": 20,
+					"fill": "#459E63",
+					"stroke": "transparent"
+				},
+				"GreenPanel": {
+					"type": "rectangle",
+					"top": 138,
+					"left": 99,
+					"width": 770,
+					"height": 139,
+					"fill": "#F8FCF7",
+					"borderRadius": 15,
+					"stroke": "#459E63"
+				},
+				"BlueShadow": {
+					"type": "rectangle",
+					"top": 290,
+					"left": 92,
+					"width": 770,
+					"height": 139,
+					"borderRadius": 20,
+					"fill": "#247CD3",
+					"stroke": "transparent"
+				},
+				"BluePanel": {
+					"type": "rectangle",
+					"top": 290,
+					"left": 99,
+					"width": 770,
+					"height": 139,
+					"fill": "#F4F9FE",
+					"borderRadius": 15,
+					"stroke": "#247CD3"
+				},
+				"PurpleShadow": {
+					"type": "rectangle",
+					"top": 442,
+					"left": 92,
+					"width": 770,
+					"height": 139,
+					"borderRadius": 20,
+					"fill": "#9F7BD9",
+					"stroke": "transparent"
+				},
+				"PurplePanel": {
+					"type": "rectangle",
+					"top": 442,
+					"left": 99,
+					"width": 770,
+					"height": 139,
+					"fill": "#F9F7FB",
+					"borderRadius": 15,
+					"stroke": "#9F7BD9"
+				},
+				"InfoIcon1": {
+					"type": "picture",
+					"top": 162,
+					"left": 117,
+					"width": 83,
+					"height": 90,
+					"picture": "/RESOURCES/Images/Icons/Tab 1 - Icon 1.png",
+					"pictureFormat": "scaled"
+				},
+				"Title1": {
+					"type": "text",
+					"text": "WHAT IS NEW?",
+					"top": 162,
+					"left": 220,
+					"width": 500,
+					"height": 22,
+					"fontWeight": "bold",
+					"fontSize": 18,
+					"stroke": "#459E63",
+					"fontFamily": "Arial"
+				},
+				"Description1": {
+					"type": "text",
+					"text": "Text areas and input objects can now use padding and vertical alignment. These properties give you precise control over the space around text and where text sits inside its area.",
+					"top": 200,
+					"left": 220,
+					"width": 617,
+					"height": 60,
+					"fontFamily": "Arial",
+					"fontSize": 13
+				},
+				"InfoIcon2": {
+					"type": "picture",
+					"top": 314,
+					"left": 117,
+					"width": 83,
+					"height": 90,
+					"picture": "/RESOURCES/Images/Icons/Tab 1 - Icon 2.png",
+					"pictureFormat": "scaled"
+				},
+				"Title2": {
+					"type": "text",
+					"text": "WHAT DOES THIS FEATURE BRING?",
+					"top": 314,
+					"left": 220,
+					"width": 500,
+					"height": 22,
+					"fontWeight": "bold",
+					"fontSize": 18,
+					"stroke": "#247CD3",
+					"fontFamily": "Arial"
+				},
+				"Description2": {
+					"type": "text",
+					"text": "Set independent padding values for each side of a text area or input, then align the text at the top, center, or bottom. This makes multi-line fields clearer and helps form layouts match their intended design.",
+					"top": 352,
+					"left": 220,
+					"width": 617,
+					"height": 60,
+					"fontFamily": "Arial",
+					"fontSize": 13
+				},
+				"InfoIcon3": {
+					"type": "picture",
+					"top": 466,
+					"left": 117,
+					"width": 83,
+					"height": 90,
+					"picture": "/RESOURCES/Images/Icons/Tab 1 - Icon 3.png",
+					"pictureFormat": "scaled"
+				},
+				"Title3": {
+					"type": "text",
+					"text": "WHAT TO EXPECT IN THIS HDI?",
+					"top": 466,
+					"left": 220,
+					"width": 500,
+					"height": 22,
+					"fontWeight": "bold",
+					"fontSize": 18,
+					"stroke": "#9F7BD9",
+					"fontFamily": "Arial"
+				},
+				"Description3": {
+					"type": "text",
+					"text": "The following tabs show how padding and vertical alignment affect text areas and input objects, and provide examples you can play with to better visualize what's possible.",
+					"top": 504,
+					"left": 220,
+					"width": 617,
+					"height": 60,
+					"fontFamily": "Arial",
+					"fontSize": 13
+				}
+			}
+		},
+		{
+			"objects": {
+				"PageTitle2": {
+					"type": "text",
+					"text": "4 WAYS TO SET PADDING & ALIGNMENT",
+					"top": 55,
+					"left": 88,
+					"width": 770,
+					"height": 36,
+					"fontSize": 28,
+					"fontWeight": "bold",
+					"textAlign": "center",
+					"stroke": "#424242",
+					"fontFamily": "Arial"
+				},
+				"JsonShadow": {
+					"type": "rectangle",
+					"top": 102,
+					"left": 31,
+					"width": 430,
+					"height": 260,
+					"borderRadius": 20,
+					"fill": "#459E63",
+					"stroke": "transparent"
+				},
+				"JsonPanel": {
+					"type": "rectangle",
+					"top": 102,
+					"left": 38,
+					"width": 430,
+					"height": 260,
+					"fill": "#F8FCF7",
+					"borderRadius": 15,
+					"stroke": "#459E63"
+				},
+				"JsonOval": {
+					"type": "oval",
+					"top": 116,
+					"left": 63,
+					"width": 40,
+					"height": 39,
+					"stroke": "transparent",
+					"fill": "#459E63"
+				},
+				"JsonNumber": {
+					"type": "text",
+					"text": "1",
+					"top": 121,
+					"left": 63,
+					"width": 40,
+					"height": 29,
+					"fontSize": 24,
+					"fontWeight": "bold",
+					"textAlign": "center",
+					"stroke": "#FFFFFF",
+					"fontFamily": "Arial"
+				},
+				"JsonTitle": {
+					"type": "text",
+					"text": "JSON",
+					"top": 126,
+					"left": 113,
+					"width": 287,
+					"height": 18,
+					"fontWeight": "bold",
+					"fontSize": 18,
+					"stroke": "#459E63",
+					"fontFamily": "Arial"
+				},
+				"JsonDescription": {
+					"type": "text",
+					"text": "Set the padding and verticalAlign properties directly in the form's JSON source, using \"paddingLeft\", \"paddingRight\", \"paddingTop\", \"paddingBottom\", and \"verticalAlign\" keys.",
+					"top": 192,
+					"left": 63,
+					"width": 175,
+					"height": 120,
+					"fontFamily": "Arial",
+					"fontSize": 13,
+					"textAlign": "justify"
+				},
+				"CssShadow": {
+					"type": "rectangle",
+					"top": 102,
+					"left": 491,
+					"width": 430,
+					"height": 260,
+					"borderRadius": 20,
+					"fill": "#247CD3",
+					"stroke": "transparent"
+				},
+				"CssPanel": {
+					"type": "rectangle",
+					"top": 102,
+					"left": 498,
+					"width": 430,
+					"height": 260,
+					"fill": "#F4F9FE",
+					"borderRadius": 15,
+					"stroke": "#247CD3"
+				},
+				"CssOval": {
+					"type": "oval",
+					"top": 116,
+					"left": 521,
+					"width": 40,
+					"height": 39,
+					"stroke": "transparent",
+					"fill": "#247CD3"
+				},
+				"CssNumber": {
+					"type": "text",
+					"text": "2",
+					"top": 121,
+					"left": 521,
+					"width": 40,
+					"height": 29,
+					"fontSize": 24,
+					"fontWeight": "bold",
+					"textAlign": "center",
+					"stroke": "#FFFFFF",
+					"fontFamily": "Arial"
+				},
+				"CssTitle": {
+					"type": "text",
+					"text": "CSS",
+					"top": 126,
+					"left": 574,
+					"width": 287,
+					"height": 18,
+					"fontWeight": "bold",
+					"fontSize": 18,
+					"stroke": "#247CD3",
+					"fontFamily": "Arial"
+				},
+				"CssDescription": {
+					"type": "text",
+					"text": "Apply padding and vertical-align through either 4D specific or standard CSS keys; that way, you can style your form the same way you would style a web page.",
+					"top": 204,
+					"left": 521,
+					"width": 175,
+					"height": 96,
+					"fontFamily": "Arial",
+					"fontSize": 13,
+					"textAlign": "justify"
+				},
+				"PropListShadow": {
+					"type": "rectangle",
+					"top": 375,
+					"left": 31,
+					"width": 430,
+					"height": 260,
+					"borderRadius": 20,
+					"fill": "#9F7BD9",
+					"stroke": "transparent"
+				},
+				"PropListPanel": {
+					"type": "rectangle",
+					"top": 375,
+					"left": 38,
+					"width": 430,
+					"height": 260,
+					"fill": "#F9F7FB",
+					"borderRadius": 15,
+					"stroke": "#9F7BD9"
+				},
+				"PropListOval": {
+					"type": "oval",
+					"top": 389,
+					"left": 63,
+					"width": 40,
+					"height": 39,
+					"stroke": "transparent",
+					"fill": "#9F7BD9"
+				},
+				"PropListNumber": {
+					"type": "text",
+					"text": "3",
+					"top": 394,
+					"left": 63,
+					"width": 40,
+					"height": 29,
+					"fontSize": 24,
+					"fontWeight": "bold",
+					"textAlign": "center",
+					"stroke": "#FFFFFF",
+					"fontFamily": "Arial"
+				},
+				"PropListTitle": {
+					"type": "text",
+					"text": "PROPERTY LIST",
+					"top": 399,
+					"left": 113,
+					"width": 287,
+					"height": 18,
+					"fontWeight": "bold",
+					"fontSize": 18,
+					"stroke": "#9F7BD9",
+					"fontFamily": "Arial"
+				},
+				"PropListDescription": {
+					"type": "text",
+					"text": "Use the Property List in the Form editor to set Padding and Vertical Alignment visually, without writing any code.",
+					"top": 486,
+					"left": 63,
+					"width": 150,
+					"height": 80,
+					"fontFamily": "Arial",
+					"fontSize": 13,
+					"textAlign": "justify"
+				},
+				"CommandsShadow": {
+					"type": "rectangle",
+					"top": 375,
+					"left": 491,
+					"width": 430,
+					"height": 260,
+					"borderRadius": 20,
+					"fill": "#FFA23D",
+					"stroke": "transparent"
+				},
+				"CommandsPanel": {
+					"type": "rectangle",
+					"top": 375,
+					"left": 498,
+					"width": 430,
+					"height": 260,
+					"fill": "#FCF9F6",
+					"borderRadius": 15,
+					"stroke": "#FFA23D"
+				},
+				"CommandsOval": {
+					"type": "oval",
+					"top": 389,
+					"left": 521,
+					"width": 40,
+					"height": 39,
+					"stroke": "transparent",
+					"fill": "#FFA23D"
+				},
+				"CommandsNumber": {
+					"type": "text",
+					"text": "4",
+					"top": 394,
+					"left": 521,
+					"width": 40,
+					"height": 29,
+					"fontSize": 24,
+					"fontWeight": "bold",
+					"textAlign": "center",
+					"stroke": "#FFFFFF",
+					"fontFamily": "Arial"
+				},
+				"CommandsTitle": {
+					"type": "text",
+					"text": "COMMANDS",
+					"top": 399,
+					"left": 574,
+					"width": 287,
+					"height": 18,
+					"fontWeight": "bold",
+					"fontSize": 18,
+					"stroke": "#FFA23D",
+					"fontFamily": "Arial"
+				},
+				"CommandsDescription": {
+					"type": "text",
+					"text": "Change padding and alignment at runtime with the  OBJECT SET VERTICAL ALIGNMENT command, and the new OBJECT SET PADDING command.",
+					"top": 470,
+					"left": 521,
+					"width": 150,
+					"height": 112,
+					"fontFamily": "Arial",
+					"fontSize": 13,
+					"textAlign": "justify"
+				},
+				"Static Picture3": {
+					"type": "picture",
+					"top": 152,
+					"left": 261,
+					"width": 200,
+					"height": 200,
+					"picture": "/RESOURCES/Images/Examples/json.png",
+					"pictureFormat": "scaled"
+				},
+				"Static Picture4": {
+					"type": "picture",
+					"top": 152,
+					"left": 716,
+					"width": 200,
+					"height": 200,
+					"picture": "/RESOURCES/Images/Examples/css.png",
+					"pictureFormat": "scaled"
+				},
+				"Static Picture5": {
+					"type": "picture",
+					"top": 399,
+					"left": 228,
+					"width": 250,
+					"height": 250,
+					"picture": "/RESOURCES/Images/Examples/propertylist.png",
+					"pictureFormat": "scaled"
+				},
+				"Static Picture6": {
+					"type": "picture",
+					"top": 401,
+					"left": 683,
+					"width": 250,
+					"height": 250,
+					"picture": "/RESOURCES/Images/Examples/commands.png",
+					"pictureFormat": "scaled"
+				}
+			}
+		},
+		{
+			"objects": {
+				"AlignShadow": {
+					"type": "rectangle",
+					"top": 100,
+					"left": 487,
+					"width": 420,
+					"height": 551,
+					"borderRadius": 20,
+					"fill": "#247CD3",
+					"stroke": "transparent"
+				},
+				"AlignPanel": {
+					"type": "rectangle",
+					"top": 100,
+					"left": 494,
+					"width": 420,
+					"height": 551,
+					"fill": "#F4F9FE",
+					"borderRadius": 15,
+					"stroke": "#247CD3"
+				},
+				"PaddingShadow": {
+					"type": "rectangle",
+					"top": 100,
+					"left": 48,
+					"width": 420,
+					"height": 551,
+					"borderRadius": 20,
+					"fill": "#459E63",
+					"stroke": "transparent"
+				},
+				"PaddingPanel": {
+					"type": "rectangle",
+					"top": 100,
+					"left": 55,
+					"width": 420,
+					"height": 551,
+					"fill": "#F8FCF7",
+					"borderRadius": 15,
+					"stroke": "#459E63"
+				},
+				"PageTitle": {
+					"type": "text",
+					"text": "PADDING & VERTICAL ALIGNMENT",
+					"top": 55,
+					"left": 88,
+					"width": 770,
+					"height": 36,
+					"fontWeight": "bold",
+					"fontSize": 26,
+					"textAlign": "center",
+					"stroke": "#424242",
+					"fontFamily": "Arial"
+				},
+				"PaddingTitle": {
+					"type": "text",
+					"text": "TEXT AREA",
+					"top": 125,
+					"left": 134,
+					"width": 120,
+					"height": 25,
+					"fontWeight": "bold",
+					"fontSize": 20,
+					"stroke": "#459E63",
+					"fontFamily": "Arial"
+				},
+				"PaddingDescription": {
+					"type": "text",
+					"text": "With padding and vertical alignment, you can now precisely position text within text area objects and adjust the spacing on all four sides.",
+					"top": 158,
+					"left": 134,
+					"width": 314,
+					"height": 64,
+					"fontFamily": "Arial",
+					"fontSize": 13,
+					"textAlign": "justify"
+				},
+				"StaticTextSample": {
+					"type": "text",
+					"text": "This text shows how padding and vertical alignment position it inside the text area.",
+					"top": 238,
+					"left": 88,
+					"width": 354,
+					"height": 100,
+					"fill": "#FFFFFF",
+					"stroke": "#459E63",
+					"borderRadius": 6,
+					"fontFamily": "Arial",
+					"fontSize": 13,
+					"borderStyle": "solid"
+				},
+				"PaddingTopRulerLabel": {
+					"type": "text",
+					"text": "Top",
+					"top": 379,
+					"left": 80,
+					"width": 50,
+					"height": 14,
+					"fontSize": 11,
+					"stroke": "#696969",
+					"fontFamily": "Arial",
+					"fontWeight": "bold"
+				},
+				"PaddingTopRuler": {
+					"type": "ruler",
+					"top": 402,
+					"left": 90,
+					"width": 100,
+					"height": 28,
+					"dataSource": "vtPaddingTop",
+					"min": 0,
+					"max": 100,
+					"step": 1,
+					"graduationStep": 1,
+					"showGraduations": false,
+					"labelsPlacement": "bottom",
+					"method": "ObjectMethods/PaddingTopRuler.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PaddingTopValue": {
+					"type": "input",
+					"top": 393,
+					"left": 200,
+					"width": 40,
+					"height": 28,
+					"dataSource": "vtPaddingTop",
+					"textAlign": "center",
+					"fill": "#FFFFFF",
+					"stroke": "#459E63",
+					"borderRadius": 4,
+					"fontSize": 11,
+					"fontFamily": "Arial",
+					"method": "ObjectMethods/PaddingTopRuler.4dm",
+					"events": [
+						"onDataChange"
+					],
+					"borderStyle": "solid",
+					"verticalAlign": "middle"
+				},
+				"PaddingRightRulerLabel": {
+					"type": "text",
+					"text": "Right",
+					"top": 379,
+					"left": 282,
+					"width": 50,
+					"height": 14,
+					"fontSize": 11,
+					"stroke": "#696969",
+					"fontFamily": "Arial",
+					"fontWeight": "bold"
+				},
+				"PaddingRightRuler": {
+					"type": "ruler",
+					"top": 402,
+					"left": 292,
+					"width": 100,
+					"height": 28,
+					"dataSource": "vtPaddingRight",
+					"min": 0,
+					"max": 100,
+					"step": 1,
+					"graduationStep": 1,
+					"showGraduations": false,
+					"labelsPlacement": "bottom",
+					"method": "ObjectMethods/PaddingTopRuler.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PaddingRightValue": {
+					"type": "input",
+					"top": 393,
+					"left": 402,
+					"width": 40,
+					"height": 28,
+					"dataSource": "vtPaddingRight",
+					"textAlign": "center",
+					"fill": "#FFFFFF",
+					"stroke": "#459E63",
+					"borderRadius": 4,
+					"fontSize": 11,
+					"fontFamily": "Arial",
+					"method": "ObjectMethods/PaddingTopRuler.4dm",
+					"events": [
+						"onDataChange"
+					],
+					"borderStyle": "solid",
+					"verticalAlign": "middle"
+				},
+				"PaddingBottomRulerLabel": {
+					"type": "text",
+					"text": "Bottom",
+					"top": 439,
+					"left": 80,
+					"width": 50,
+					"height": 14,
+					"fontSize": 11,
+					"stroke": "#696969",
+					"fontFamily": "Arial",
+					"fontWeight": "bold"
+				},
+				"PaddingBottomRuler": {
+					"type": "ruler",
+					"top": 455,
+					"left": 90,
+					"width": 100,
+					"height": 28,
+					"dataSource": "vtPaddingBottom",
+					"min": 0,
+					"max": 100,
+					"step": 1,
+					"graduationStep": 1,
+					"showGraduations": false,
+					"labelsPlacement": "bottom",
+					"method": "ObjectMethods/PaddingTopRuler.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PaddingBottomValue": {
+					"type": "input",
+					"top": 446,
+					"left": 200,
+					"width": 40,
+					"height": 28,
+					"dataSource": "vtPaddingBottom",
+					"textAlign": "center",
+					"fill": "#FFFFFF",
+					"stroke": "#459E63",
+					"borderRadius": 4,
+					"fontSize": 11,
+					"fontFamily": "Arial",
+					"method": "ObjectMethods/PaddingTopRuler.4dm",
+					"events": [
+						"onDataChange"
+					],
+					"borderStyle": "solid",
+					"verticalAlign": "middle"
+				},
+				"PaddingLeftRulerLabel": {
+					"type": "text",
+					"text": "Left",
+					"top": 434,
+					"left": 282,
+					"width": 50,
+					"height": 14,
+					"fontSize": 11,
+					"stroke": "#696969",
+					"fontFamily": "Arial",
+					"fontWeight": "bold"
+				},
+				"PaddingLeftRuler": {
+					"type": "ruler",
+					"top": 455,
+					"left": 292,
+					"width": 100,
+					"height": 28,
+					"dataSource": "vtPaddingLeft",
+					"min": 0,
+					"max": 100,
+					"step": 1,
+					"graduationStep": 1,
+					"showGraduations": false,
+					"labelsPlacement": "bottom",
+					"method": "ObjectMethods/PaddingTopRuler.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"PaddingLeftValue": {
+					"type": "input",
+					"top": 446,
+					"left": 402,
+					"width": 40,
+					"height": 28,
+					"dataSource": "vtPaddingLeft",
+					"textAlign": "center",
+					"fill": "#FFFFFF",
+					"stroke": "#459E63",
+					"borderRadius": 4,
+					"fontSize": 11,
+					"fontFamily": "Arial",
+					"method": "ObjectMethods/PaddingTopRuler.4dm",
+					"events": [
+						"onDataChange"
+					],
+					"borderStyle": "solid",
+					"verticalAlign": "middle"
+				},
+				"HorizontalAlignRulerLabel": {
+					"type": "text",
+					"text": "Horizontal Align",
+					"top": 512,
+					"left": 121,
+					"width": 104,
+					"height": 15,
+					"fontSize": 12,
+					"stroke": "#459E63",
+					"fontFamily": "Arial",
+					"fontWeight": "bold",
+					"textAlign": "center"
+				},
+				"HAlignLeftBtn": {
+					"type": "radio",
+					"text": "",
+					"top": 558,
+					"left": 120,
+					"width": 35,
+					"height": 35,
+					"dataSource": "vtHAlignIsLeft",
+					"radioGroup": "hAlignGroup",
+					"style": "toolbar",
+					"fontSize": 10,
+					"method": "ObjectMethods/HAlignLeftBtn.4dm",
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/Images/Icons/left-green.png",
+					"iconFrames": 1,
+					"textPlacement": "center"
+				},
+				"HAlignCenterBtn": {
+					"type": "radio",
+					"text": "",
+					"top": 558,
+					"left": 155,
+					"width": 35,
+					"height": 35,
+					"dataSource": "vtHAlignIsCenter",
+					"radioGroup": "hAlignGroup",
+					"style": "toolbar",
+					"fontSize": 10,
+					"method": "ObjectMethods/HAlignCenterBtn.4dm",
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/Images/Icons/center-green.png",
+					"iconFrames": 1,
+					"textPlacement": "center"
+				},
+				"HAlignRightBtn": {
+					"type": "radio",
+					"text": "",
+					"top": 558,
+					"left": 190,
+					"width": 35,
+					"height": 35,
+					"dataSource": "vtHAlignIsRight",
+					"radioGroup": "hAlignGroup",
+					"style": "toolbar",
+					"fontSize": 10,
+					"method": "ObjectMethods/HAlignRightBtn.4dm",
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/Images/Icons/right-green.png",
+					"iconFrames": 1,
+					"textPlacement": "center"
+				},
+				"VerticalAlignRulerLabel": {
+					"type": "text",
+					"text": "Vertical Align",
+					"top": 512,
+					"left": 314,
+					"width": 83,
+					"height": 15,
+					"fontSize": 12,
+					"stroke": "#459E63",
+					"fontFamily": "Arial",
+					"fontWeight": "bold",
+					"textAlign": "center"
+				},
+				"VAlignTopBtn": {
+					"type": "radio",
+					"text": "",
+					"top": 539,
+					"left": 340,
+					"width": 35,
+					"height": 35,
+					"dataSource": "vtVAlignIsTop",
+					"radioGroup": "vAlignGroup",
+					"style": "toolbar",
+					"fontSize": 10,
+					"method": "ObjectMethods/VAlignTopBtn.4dm",
+					"events": [
+						"onClick"
+					],
+					"iconFrames": 1,
+					"icon": "/RESOURCES/Images/Icons/top-green.png",
+					"textPlacement": "center"
+				},
+				"VAlignMiddleBtn": {
+					"type": "radio",
+					"text": "",
+					"top": 573,
+					"left": 340,
+					"width": 35,
+					"height": 35,
+					"dataSource": "vtVAlignIsMiddle",
+					"radioGroup": "vAlignGroup",
+					"style": "toolbar",
+					"fontSize": 10,
+					"method": "ObjectMethods/VAlignMiddleBtn.4dm",
+					"events": [
+						"onClick"
+					],
+					"iconFrames": 1,
+					"icon": "/RESOURCES/Images/Icons/middle-green.png",
+					"textPlacement": "center"
+				},
+				"VAlignBottomBtn": {
+					"type": "radio",
+					"text": "",
+					"top": 607,
+					"left": 340,
+					"width": 35,
+					"height": 35,
+					"dataSource": "vtVAlignIsBottom",
+					"radioGroup": "vAlignGroup",
+					"style": "toolbar",
+					"fontSize": 10,
+					"method": "ObjectMethods/VAlignBottomBtn.4dm",
+					"events": [
+						"onClick"
+					],
+					"iconFrames": 1,
+					"icon": "/RESOURCES/Images/Icons/bottom-green.png",
+					"textPlacement": "center"
+				},
+				"AlignTitle": {
+					"type": "text",
+					"text": "INPUT",
+					"top": 125,
+					"left": 575,
+					"width": 120,
+					"height": 25,
+					"fontWeight": "bold",
+					"fontSize": 20,
+					"stroke": "#247CD3",
+					"fontFamily": "Arial"
+				},
+				"AlignDescription": {
+					"type": "text",
+					"text": "Input objects also support padding and vertical alignment, useful for spacing text from the borders or making room for icons like the ones shown here.",
+					"top": 158,
+					"left": 575,
+					"width": 314,
+					"height": 64,
+					"fontFamily": "Arial",
+					"fontSize": 13,
+					"textAlign": "justify"
+				},
+				"AlignInput": {
+					"type": "input",
+					"top": 238,
+					"left": 527,
+					"width": 354,
+					"height": 100,
+					"dataSource": "vtInputSample",
+					"placeholder": "Type or paste some text here.",
+					"fill": "#FFFFFF",
+					"stroke": "#247CD3",
+					"borderRadius": 6,
+					"fontFamily": "Arial",
+					"fontSize": 13,
+					"events": [
+						"onDataChange"
+					],
+					"borderStyle": "solid",
+					"textAlign": "justify"
+				},
+				"InputSearchBtn": {
+					"type": "button",
+					"top": 242,
+					"left": 527,
+					"width": 35,
+					"height": 35,
+					"style": "toolbar",
+					"tooltip": "Search",
+					"icon": "/RESOURCES/Images/Icons/search.png",
+					"iconFrames": 1,
+					"method": "ObjectMethods/InputSearchBtn.4dm",
+					"events": [
+						"onClick"
+					],
+					"stroke": "#247CD3"
+				},
+				"InputClearBtn": {
+					"type": "button",
+					"top": 305,
+					"left": 853,
+					"width": 30,
+					"height": 30,
+					"style": "toolbar",
+					"tooltip": "Clear",
+					"icon": "/RESOURCES/Images/Icons/close.png",
+					"iconFrames": 1,
+					"method": "ObjectMethods/InputClearBtn.4dm",
+					"events": [
+						"onClick"
+					],
+					"stroke": "#247CD3"
+				},
+				"InputValidateBtn": {
+					"type": "button",
+					"top": 305,
+					"left": 824,
+					"width": 30,
+					"height": 30,
+					"style": "toolbar",
+					"tooltip": "Validate",
+					"icon": "/RESOURCES/Images/Icons/validate.png",
+					"iconFrames": 1,
+					"method": "ObjectMethods/InputValidateBtn.4dm",
+					"events": [
+						"onClick"
+					],
+					"stroke": "#247CD3"
+				},
+				"InputTopRulerLabel": {
+					"type": "text",
+					"text": "Top",
+					"top": 379,
+					"left": 519,
+					"width": 50,
+					"height": 14,
+					"fontSize": 11,
+					"stroke": "#696969",
+					"fontFamily": "Arial",
+					"fontWeight": "bold"
+				},
+				"InputTopRuler": {
+					"type": "ruler",
+					"top": 402,
+					"left": 529,
+					"width": 100,
+					"height": 28,
+					"dataSource": "vtInputPaddingTop",
+					"min": 0,
+					"max": 100,
+					"step": 1,
+					"graduationStep": 1,
+					"showGraduations": false,
+					"labelsPlacement": "bottom",
+					"method": "ObjectMethods/InputPaddingRuler.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"InputTopValue": {
+					"type": "input",
+					"top": 393,
+					"left": 639,
+					"width": 40,
+					"height": 28,
+					"dataSource": "vtInputPaddingTop",
+					"textAlign": "center",
+					"fill": "#FFFFFF",
+					"stroke": "#247CD3",
+					"borderRadius": 4,
+					"fontSize": 11,
+					"fontFamily": "Arial",
+					"method": "ObjectMethods/InputPaddingRuler.4dm",
+					"events": [
+						"onDataChange"
+					],
+					"borderStyle": "solid",
+					"verticalAlign": "middle"
+				},
+				"InputRightRulerLabel": {
+					"type": "text",
+					"text": "Right",
+					"top": 379,
+					"left": 721,
+					"width": 50,
+					"height": 14,
+					"fontSize": 11,
+					"stroke": "#696969",
+					"fontFamily": "Arial",
+					"fontWeight": "bold"
+				},
+				"InputRightRuler": {
+					"type": "ruler",
+					"top": 402,
+					"left": 731,
+					"width": 100,
+					"height": 28,
+					"dataSource": "vtInputPaddingRight",
+					"min": 0,
+					"max": 100,
+					"step": 1,
+					"graduationStep": 1,
+					"showGraduations": false,
+					"labelsPlacement": "bottom",
+					"method": "ObjectMethods/InputPaddingRuler.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"InputRightValue": {
+					"type": "input",
+					"top": 393,
+					"left": 841,
+					"width": 40,
+					"height": 28,
+					"dataSource": "vtInputPaddingRight",
+					"textAlign": "center",
+					"fill": "#FFFFFF",
+					"stroke": "#247CD3",
+					"borderRadius": 4,
+					"fontSize": 11,
+					"fontFamily": "Arial",
+					"method": "ObjectMethods/InputPaddingRuler.4dm",
+					"events": [
+						"onDataChange"
+					],
+					"borderStyle": "solid",
+					"verticalAlign": "middle"
+				},
+				"InputBottomRulerLabel": {
+					"type": "text",
+					"text": "Bottom",
+					"top": 439,
+					"left": 519,
+					"width": 50,
+					"height": 14,
+					"fontSize": 11,
+					"stroke": "#696969",
+					"fontFamily": "Arial",
+					"fontWeight": "bold"
+				},
+				"InputBottomRuler": {
+					"type": "ruler",
+					"top": 455,
+					"left": 529,
+					"width": 100,
+					"height": 28,
+					"dataSource": "vtInputPaddingBottom",
+					"min": 0,
+					"max": 100,
+					"step": 1,
+					"graduationStep": 1,
+					"showGraduations": false,
+					"labelsPlacement": "bottom",
+					"method": "ObjectMethods/InputPaddingRuler.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"InputBottomValue": {
+					"type": "input",
+					"top": 446,
+					"left": 639,
+					"width": 40,
+					"height": 28,
+					"dataSource": "vtInputPaddingBottom",
+					"textAlign": "center",
+					"fill": "#FFFFFF",
+					"stroke": "#247CD3",
+					"borderRadius": 4,
+					"fontSize": 11,
+					"fontFamily": "Arial",
+					"method": "ObjectMethods/InputPaddingRuler.4dm",
+					"events": [
+						"onDataChange"
+					],
+					"borderStyle": "solid",
+					"verticalAlign": "middle"
+				},
+				"InputLeftRulerLabel": {
+					"type": "text",
+					"text": "Left",
+					"top": 434,
+					"left": 721,
+					"width": 50,
+					"height": 14,
+					"fontSize": 11,
+					"stroke": "#696969",
+					"fontFamily": "Arial",
+					"fontWeight": "bold"
+				},
+				"InputLeftRuler": {
+					"type": "ruler",
+					"top": 455,
+					"left": 731,
+					"width": 100,
+					"height": 28,
+					"dataSource": "vtInputPaddingLeft",
+					"min": 0,
+					"max": 100,
+					"step": 1,
+					"graduationStep": 1,
+					"showGraduations": false,
+					"labelsPlacement": "bottom",
+					"method": "ObjectMethods/InputPaddingRuler.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"InputLeftValue": {
+					"type": "input",
+					"top": 446,
+					"left": 841,
+					"width": 40,
+					"height": 28,
+					"dataSource": "vtInputPaddingLeft",
+					"textAlign": "center",
+					"fill": "#FFFFFF",
+					"stroke": "#247CD3",
+					"borderRadius": 4,
+					"fontSize": 11,
+					"fontFamily": "Arial",
+					"method": "ObjectMethods/InputPaddingRuler.4dm",
+					"events": [
+						"onDataChange"
+					],
+					"borderStyle": "solid",
+					"verticalAlign": "middle"
+				},
+				"InputHorizontalAlignRulerLabel": {
+					"type": "text",
+					"text": "Horizontal Align",
+					"top": 512,
+					"left": 560,
+					"width": 104,
+					"height": 14,
+					"fontSize": 12,
+					"stroke": "#247CD3",
+					"fontFamily": "Arial",
+					"fontWeight": "bold",
+					"textAlign": "center"
+				},
+				"InputHAlignLeftBtn": {
+					"type": "radio",
+					"text": "",
+					"top": 558,
+					"left": 558,
+					"width": 35,
+					"height": 35,
+					"dataSource": "vtInputHAlignIsLeft",
+					"radioGroup": "inputHAlignGroup",
+					"style": "toolbar",
+					"fontSize": 10,
+					"method": "ObjectMethods/InputHAlignLeftBtn.4dm",
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/Images/Icons/left.png",
+					"iconFrames": 1
+				},
+				"InputHAlignCenterBtn": {
+					"type": "radio",
+					"text": "",
+					"top": 558,
+					"left": 593,
+					"width": 35,
+					"height": 35,
+					"dataSource": "vtInputHAlignIsCenter",
+					"radioGroup": "inputHAlignGroup",
+					"style": "toolbar",
+					"fontSize": 10,
+					"method": "ObjectMethods/InputHAlignCenterBtn.4dm",
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/Images/Icons/center.png",
+					"iconFrames": 1
+				},
+				"InputHAlignRightBtn": {
+					"type": "radio",
+					"text": "",
+					"top": 558,
+					"left": 628,
+					"width": 35,
+					"height": 35,
+					"dataSource": "vtInputHAlignIsRight",
+					"radioGroup": "inputHAlignGroup",
+					"style": "toolbar",
+					"fontSize": 10,
+					"method": "ObjectMethods/InputHAlignRightBtn.4dm",
+					"events": [
+						"onClick"
+					],
+					"icon": "/RESOURCES/Images/Icons/right.png",
+					"iconFrames": 1
+				},
+				"InputVerticalAlignRulerLabel": {
+					"type": "text",
+					"text": "Vertical Align",
+					"top": 512,
+					"left": 753,
+					"width": 83,
+					"height": 15,
+					"fontSize": 12,
+					"stroke": "#247CD3",
+					"fontFamily": "Arial",
+					"fontWeight": "bold",
+					"textAlign": "center"
+				},
+				"InputVAlignTopBtn": {
+					"type": "radio",
+					"text": "",
+					"top": 539,
+					"left": 772,
+					"width": 35,
+					"height": 35,
+					"dataSource": "vtInputVAlignIsTop",
+					"radioGroup": "inputVAlignGroup",
+					"style": "toolbar",
+					"fontSize": 10,
+					"method": "ObjectMethods/InputVAlignTopBtn.4dm",
+					"events": [
+						"onClick"
+					],
+					"iconFrames": 1,
+					"icon": "/RESOURCES/Images/Icons/top.png"
+				},
+				"InputVAlignMiddleBtn": {
+					"type": "radio",
+					"text": "",
+					"top": 573,
+					"left": 772,
+					"width": 35,
+					"height": 35,
+					"dataSource": "vtInputVAlignIsMiddle",
+					"radioGroup": "inputVAlignGroup",
+					"style": "toolbar",
+					"fontSize": 10,
+					"method": "ObjectMethods/InputVAlignMiddleBtn.4dm",
+					"events": [
+						"onClick"
+					],
+					"iconFrames": 1,
+					"icon": "/RESOURCES/Images/Icons/middle.png"
+				},
+				"InputVAlignBottomBtn": {
+					"type": "radio",
+					"text": "",
+					"top": 607,
+					"left": 772,
+					"width": 35,
+					"height": 35,
+					"dataSource": "vtInputVAlignIsBottom",
+					"radioGroup": "inputVAlignGroup",
+					"style": "toolbar",
+					"fontSize": 10,
+					"method": "ObjectMethods/InputVAlignBottomBtn.4dm",
+					"events": [
+						"onClick"
+					],
+					"iconFrames": 1,
+					"icon": "/RESOURCES/Images/Icons/bottom.png"
+				},
+				"Line1": {
+					"type": "line",
+					"top": 518,
+					"left": 265,
+					"width": 0,
+					"height": 115,
+					"stroke": "#459E63"
+				},
+				"PaddingTopRulerLabel1": {
+					"type": "text",
+					"text": "0-100",
+					"top": 377,
+					"left": 196,
+					"width": 48,
+					"height": 14,
+					"fontSize": 11,
+					"stroke": "#696969",
+					"fontFamily": "Arial",
+					"textAlign": "center",
+					"fontWeight": "bold"
+				},
+				"PaddingTopRulerLabel2": {
+					"type": "text",
+					"text": "0-100",
+					"top": 431,
+					"left": 196,
+					"width": 48,
+					"height": 14,
+					"fontSize": 11,
+					"stroke": "#696969",
+					"fontFamily": "Arial",
+					"textAlign": "center",
+					"fontWeight": "bold"
+				},
+				"PaddingTopRulerLabel3": {
+					"type": "text",
+					"text": "0-100",
+					"top": 378,
+					"left": 398,
+					"width": 48,
+					"height": 14,
+					"fontSize": 11,
+					"stroke": "#696969",
+					"fontFamily": "Arial",
+					"textAlign": "center",
+					"fontWeight": "bold"
+				},
+				"InputTopRulerLabel1": {
+					"type": "text",
+					"text": "0-100",
+					"top": 378,
+					"left": 635,
+					"width": 48,
+					"height": 14,
+					"fontSize": 11,
+					"stroke": "#696969",
+					"fontFamily": "Arial",
+					"textAlign": "center",
+					"fontWeight": "bold"
+				},
+				"InputTopRulerLabel2": {
+					"type": "text",
+					"text": "0-100",
+					"top": 431,
+					"left": 635,
+					"width": 48,
+					"height": 14,
+					"fontSize": 11,
+					"stroke": "#696969",
+					"fontFamily": "Arial",
+					"textAlign": "center",
+					"fontWeight": "bold"
+				},
+				"InputTopRulerLabel3": {
+					"type": "text",
+					"text": "0-100",
+					"top": 378,
+					"left": 837,
+					"width": 48,
+					"height": 14,
+					"fontSize": 11,
+					"stroke": "#696969",
+					"fontFamily": "Arial",
+					"textAlign": "center",
+					"fontWeight": "bold"
+				},
+				"InputTopRulerLabel4": {
+					"type": "text",
+					"text": "0-100",
+					"top": 431,
+					"left": 837,
+					"width": 48,
+					"height": 14,
+					"fontSize": 11,
+					"stroke": "#696969",
+					"fontFamily": "Arial",
+					"textAlign": "center",
+					"fontWeight": "bold"
+				},
+				"Line2": {
+					"type": "line",
+					"top": 518,
+					"left": 705,
+					"width": 0,
+					"height": 115,
+					"stroke": "#247CD3"
+				},
+				"Text": {
+					"type": "text",
+					"text": "Padding Options",
+					"top": 358,
+					"left": 657,
+					"width": 106,
+					"height": 15,
+					"fontSize": 12,
+					"fontFamily": "Arial",
+					"stroke": "#247CD3",
+					"fontWeight": "bold"
+				},
+				"Text1": {
+					"type": "text",
+					"text": "Padding Options",
+					"top": 358,
+					"left": 215,
+					"width": 100,
+					"height": 15,
+					"fontSize": 12,
+					"fontFamily": "Arial",
+					"stroke": "#459E63",
+					"fontWeight": "bold",
+					"textAlign": "center"
+				},
+				"JsonOval1": {
+					"type": "rectangle",
+					"top": 111,
+					"left": 80,
+					"width": 50,
+					"height": 50,
+					"borderRadius": 17,
+					"fill": "#459E63",
+					"stroke": "transparent"
+				},
+				"JsonNumber2": {
+					"type": "text",
+					"text": "Aa",
+					"top": 122,
+					"left": 82,
+					"width": 48,
+					"height": 30,
+					"fontSize": 24,
+					"fontWeight": "bold",
+					"textAlign": "center",
+					"stroke": "#FFFFFF",
+					"fontFamily": "Arial"
+				},
+				"CssOval1": {
+					"type": "rectangle",
+					"top": 110,
+					"left": 519,
+					"width": 50,
+					"height": 50,
+					"borderRadius": 17,
+					"fill": "#247CD3",
+					"stroke": "transparent"
+				},
+				"CssNumber1": {
+					"type": "text",
+					"text": "I",
+					"top": 120,
+					"left": 519,
+					"width": 50,
+					"height": 30,
+					"fontSize": 24,
+					"fontWeight": "bold",
+					"textAlign": "center",
+					"stroke": "#FFFFFF",
+					"fontFamily": "Arial"
+				},
+				"Line3": {
+					"type": "line",
+					"top": 391,
+					"left": 265,
+					"width": 0,
+					"height": 42,
+					"stroke": "#459E63"
+				},
+				"Line4": {
+					"type": "line",
+					"top": 391,
+					"left": 705,
+					"width": 0,
+					"height": 42,
+					"stroke": "#247CD3"
+				},
+				"PaddingTopRulerLabel4": {
+					"type": "text",
+					"text": "0-100",
+					"top": 431,
+					"left": 398,
+					"width": 48,
+					"height": 14,
+					"fontSize": 11,
+					"stroke": "#696969",
+					"fontFamily": "Arial",
+					"textAlign": "center",
+					"fontWeight": "bold"
+				},
+				"Line5": {
+					"type": "line",
+					"top": 499,
+					"left": 115,
+					"width": 300,
+					"height": 0,
+					"stroke": "#459E63"
+				},
+				"Line6": {
+					"type": "line",
+					"top": 499,
+					"left": 558,
+					"width": 300,
+					"height": 0,
+					"stroke": "#247CD3"
+				},
+				"Line7": {
+					"type": "line",
+					"top": 443,
+					"left": 265,
+					"width": 0,
+					"height": 42,
+					"stroke": "#459E63"
+				},
+				"Line8": {
+					"type": "line",
+					"top": 443,
+					"left": 705,
+					"width": 0,
+					"height": 42,
+					"stroke": "#247CD3"
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"geometryStamp": 1004
+}
