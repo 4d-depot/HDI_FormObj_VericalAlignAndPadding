@@ -996,73 +996,6 @@
 					"fontSize": 13,
 					"textAlign": "justify"
 				},
-				"AlignInput": {
-					"type": "input",
-					"top": 238,
-					"left": 527,
-					"width": 354,
-					"height": 100,
-					"dataSource": "vtInputSample",
-					"placeholder": "Type or paste some text here.",
-					"fill": "#FFFFFF",
-					"stroke": "#247CD3",
-					"borderRadius": 6,
-					"fontFamily": "Arial",
-					"fontSize": 13,
-					"events": [
-						"onDataChange"
-					],
-					"borderStyle": "solid",
-					"textAlign": "justify"
-				},
-				"InputSearchBtn": {
-					"type": "button",
-					"top": 242,
-					"left": 527,
-					"width": 35,
-					"height": 35,
-					"style": "toolbar",
-					"tooltip": "Search",
-					"icon": "/RESOURCES/Images/Icons/search.png",
-					"iconFrames": 1,
-					"method": "ObjectMethods/InputSearchBtn.4dm",
-					"events": [
-						"onClick"
-					],
-					"stroke": "#247CD3"
-				},
-				"InputClearBtn": {
-					"type": "button",
-					"top": 305,
-					"left": 853,
-					"width": 30,
-					"height": 30,
-					"style": "toolbar",
-					"tooltip": "Clear",
-					"icon": "/RESOURCES/Images/Icons/close.png",
-					"iconFrames": 1,
-					"method": "ObjectMethods/InputClearBtn.4dm",
-					"events": [
-						"onClick"
-					],
-					"stroke": "#247CD3"
-				},
-				"InputValidateBtn": {
-					"type": "button",
-					"top": 305,
-					"left": 824,
-					"width": 30,
-					"height": 30,
-					"style": "toolbar",
-					"tooltip": "Validate",
-					"icon": "/RESOURCES/Images/Icons/validate.png",
-					"iconFrames": 1,
-					"method": "ObjectMethods/InputValidateBtn.4dm",
-					"events": [
-						"onClick"
-					],
-					"stroke": "#247CD3"
-				},
 				"InputTopRulerLabel": {
 					"type": "text",
 					"text": "Top",
@@ -1635,6 +1568,59 @@
 					"width": 0,
 					"height": 42,
 					"stroke": "#247CD3"
+				},
+				"AlignInput": {
+					"type": "input",
+					"top": 271,
+					"left": 538,
+					"width": 332,
+					"height": 34,
+					"dataSource": "vtInputSample",
+					"placeholder": "Search",
+					"fill": "#FFFFFF",
+					"fontFamily": "Arial",
+					"fontSize": 13,
+					"events": [
+						"onDataChange"
+					],
+					"borderStyle": "solid",
+					"textAlign": "justify",
+					"borderRadius": 20,
+					"borderColor": "#c0c0c0",
+					"multiline": "no",
+					"fontWeight": "bold"
+				},
+				"InputSearchBtn2": {
+					"type": "button",
+					"top": 273,
+					"left": 529,
+					"width": 30,
+					"height": 30,
+					"style": "custom",
+					"tooltip": "Search",
+					"icon": "/RESOURCES/Images/Icons/search.png",
+					"iconFrames": 1,
+					"method": "ObjectMethods/InputSearchBtn2.4dm",
+					"events": [
+						"onClick"
+					],
+					"stroke": "#247CD3"
+				},
+				"InputClearBtn": {
+					"type": "button",
+					"top": 273,
+					"left": 851,
+					"width": 30,
+					"height": 30,
+					"style": "custom",
+					"tooltip": "Clear",
+					"icon": "/RESOURCES/Images/Icons/close.png",
+					"iconFrames": 1,
+					"method": "ObjectMethods/InputClearBtn.4dm",
+					"events": [
+						"onClick"
+					],
+					"stroke": "#247CD3"
 				}
 			}
 		}
@@ -1650,5 +1636,5 @@
 			"View 1": {}
 		}
 	},
-	"geometryStamp": 1004
+	"geometryStamp": 1190
 }
