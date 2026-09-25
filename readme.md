@@ -1,6 +1,6 @@
 # HDI_FormObj_VericalAlignAndPadding
 
-HDI adjust vertical alignment and padding in my text area and input objects (4D 21 R5)
+How Do I Adjust Vertical Alignment and Padding in my Text Area and Input Objects? (4D 21 R5)
 
 Find more information on the [blog post](https://blog.4d.com/).
 
