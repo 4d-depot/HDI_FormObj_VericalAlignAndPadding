@@ -1,6 +1,6 @@
 # HDI_FormObj_VericalAlignAndPadding
 
-This HDI demonstrates the padding and vertical/horizontal alignment properties available on input and text area form objects in 4D. It provides an interactive form where you can adjust top, right, bottom, and left padding, as well as horizontal alignment (left, center, right) and vertical alignment (top, middle, bottom), using rulers and buttons, and immediately see how the changes affect the position of sample text inside the object.
+HDI adjust vertical alignment and padding in my text area and input objects (4D 21 R5)
 
 Find more information on the [blog post](https://blog.4d.com/).
 
