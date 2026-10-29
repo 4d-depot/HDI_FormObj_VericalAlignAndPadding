@@ -2,7 +2,7 @@
 
 How Do I Adjust Vertical Alignment and Padding in my Text Area and Input Objects? (4D 21 R5)
 
-Find more information on the [blog post](https://blog.4d.com/).
+Find more information on the [blog post]([https://blog.4d.com/](https://blog.4d.com/padding-and-vertical-alignment-fine-tune-text-placement-in-inputs-and-text-areas/).
 
 ## Installing and Using a 4D Project
 
